@@ -15,7 +15,9 @@ class TriangleClassifierTest {
         String excepted = "tam giac deu";
         String result = TriangleClassifier.getTypeOfTriangle(side1, side2, side3);
         assertEquals(excepted, result);
-    } @Test
+    }
+
+    @Test
     @DisplayName("tam giac can")
     void getTypeOfTriangle1() {
         int side1 = 2;
@@ -23,6 +25,18 @@ class TriangleClassifierTest {
         int side3 = 3;
 
         String excepted = "tam giac can";
+        String result = TriangleClassifier.getTypeOfTriangle(side1, side2, side3);
+        assertEquals(excepted, result);
+    }
+
+    @Test
+    @DisplayName("tam giac thuong")
+    void getTypeOfTriangle2() {
+        int side1 = 3;
+        int side2 = 4;
+        int side3 = 5;
+
+        String excepted = "tam giac thuong";
         String result = TriangleClassifier.getTypeOfTriangle(side1, side2, side3);
         assertEquals(excepted, result);
     }
