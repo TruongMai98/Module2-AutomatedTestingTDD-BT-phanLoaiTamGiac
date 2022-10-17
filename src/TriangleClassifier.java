@@ -7,8 +7,10 @@ public class TriangleClassifier {
             return "tam giac deu";
         } else if (side1EqualSide2 || side2EqualSide3 || side3EqualSide1) {
             return "tam giac can";
-        } else {
+        } else if (Math.abs(side1 - side2) < side3 && Math.abs(side1 - side2) < (side1 + side2) && side3 < (side1 + side2)) {
             return "tam giac thuong";
+        } else {
+            return "khong phai tam giac";
         }
     }
 }
