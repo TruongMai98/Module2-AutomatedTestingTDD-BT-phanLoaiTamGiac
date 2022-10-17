@@ -3,7 +3,7 @@ public class TriangleClassifier {
         boolean side1EqualSide2 = side1 == side2;
         boolean side2EqualSide3 = side2 == side3;
         boolean side3EqualSide1 = side1 == side3;
-        if (side1EqualSide2 && side2EqualSide3 && side3EqualSide1) {
+        if (side1EqualSide2 && side2EqualSide3) {
             return "tam giac deu";
         } else if (side1EqualSide2 || side2EqualSide3 || side3EqualSide1) {
             return "tam giac can";
