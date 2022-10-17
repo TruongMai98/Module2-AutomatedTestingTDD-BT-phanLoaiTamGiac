@@ -40,4 +40,16 @@ class TriangleClassifierTest {
         String result = TriangleClassifier.getTypeOfTriangle(side1, side2, side3);
         assertEquals(excepted, result);
     }
+
+    @Test
+    @DisplayName("khong phai tam giac")
+    void getTypeOfTriangle3() {
+        int side1 = 8;
+        int side2 = 2;
+        int side3 = 3;
+
+        String excepted = "khong phai tam giac";
+        String result = TriangleClassifier.getTypeOfTriangle(side1, side2, side3);
+        assertEquals(excepted, result);
+    }
 }
