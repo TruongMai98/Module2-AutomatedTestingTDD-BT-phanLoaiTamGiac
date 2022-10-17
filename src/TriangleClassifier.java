@@ -5,6 +5,8 @@ public class TriangleClassifier {
         boolean side3EqualSide1 = side1 == side3;
         if (side1EqualSide2 && side2EqualSide3 && side3EqualSide1) {
             return "tam giac deu";
+        } else if (side1EqualSide2 || side2EqualSide3 || side3EqualSide1) {
+            return "tam giac can";
         }
         return null;
     }
